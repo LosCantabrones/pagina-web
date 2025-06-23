@@ -1,0 +1,30 @@
+nav {
+  background-color: #fc4b08;
+
+  ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    margin: 0;
+    padding: 0;
+    align-items: center;
+
+    li {
+      a {
+        color: white;
+        text-decoration: none;
+
+        &.active {
+          text-decoration: underline;
+          font-weight: bold;
+          color: rgb(233, 228, 228);
+          background-color: #fc4b08;
+        }
+
+        &:hover {
+          opacity: 0.8;
+        }
+      }
+    }
+  }
+}
