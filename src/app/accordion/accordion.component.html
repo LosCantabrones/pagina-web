@@ -1,0 +1,9 @@
+<div class="accordion">
+  <div class="header" (click)="toggle()" [class.active]="isActive()">
+    <span class="arrow" [@rotateArrow]="isActive() ? 'open' : 'closed'">&#9654;</span>
+    <span class="title">{{ title }}</span>
+  </div>
+  <div class="content" [@expandCollapse]="isActive() ? 'open' : 'closed'">
+    <ng-content *ngIf="isActive()"></ng-content>
+  </div>
+</div>

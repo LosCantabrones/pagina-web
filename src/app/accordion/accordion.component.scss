@@ -1,0 +1,31 @@
+.accordion {
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  margin: 1rem 0;
+  overflow: hidden;
+}
+
+.header {
+  background-color: #f1f1f1;
+  padding-left: 1rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  transition: background 0.3s ease;
+}
+
+.header.active {
+  background-color: #e0e0e0;
+}
+
+.arrow {
+  transition: transform 0.3s ease;
+}
+
+.title{
+  padding: 1rem;
+}
+
+.content {
+  background: #fff;
+}
